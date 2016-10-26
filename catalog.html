@@ -80,7 +80,7 @@
               <table>
                 <tr>
                   <td>
-                    <button class="cancel-btn" type="submit">
+                    <button class="cancel-btn" type="button">
                       <img src="logo-11.png" width="" height="">
                     </button>
                   </td>
@@ -99,7 +99,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <button class="cancel-btn" type="submit">
+                    <button class="cancel-btn" type="button">
                       <img src="logo-11.png" width="" height="">
                     </button>
                   </td>
@@ -166,13 +166,12 @@
 
         <div class="selection-price">
           <span class="select-price">Цена: 100 руб. - 500 руб.</span>
-          <div class="select-block">
-            <div class="scale">
-              <span></span>
-            </div>
-            <div class="slider-1">
-            </div>
-            <div class="slider-2">
+          <div class="slider-wrapper">
+            <div class="slider">                                      <!-- Общая полоса -->
+              <div class="slider-inner">                              <!-- Внутренняя жирная полоса -->
+                <span class="slider-range slider-range-1"></span>     <!-- Регулятор левый -->
+                <span class="slider-range slider-range-2"></span>     <!-- Регулятор правый -->
+              </div>
             </div>
           </div>
         </div>
