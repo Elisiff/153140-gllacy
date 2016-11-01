@@ -15,6 +15,7 @@ h1 {
 }
 
 .container {
+  box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
   padding: 0 27px;
@@ -193,7 +194,7 @@ input[type=search] {
   justify-content: space-between;;
   list-style-type: none;
   width: 190px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .number-btn li{
