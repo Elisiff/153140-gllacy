@@ -4,10 +4,210 @@ body {
   line-height: 22px;
   color: #ffffff;
   background-color: #849d8f;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  }
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none; 
 }
 
 h1 {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+  display: flex;
+
+  /* Для сетки */
+  outline: 1px black solid;
+}
+
+.container:nth-child(1) {
+  padding-left: 22px;
+  margin-top: 10px;
+}
+
+.container:nth-child(2) {
+  display: block;
+}
+
+.container:nth-child(3) {
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 26px;
+}
+
+.main-navigation {
+  width: 412px;
+}
+
+.buttons {
+  width: 267px;
+  margin-left: auto;
+}
+
+.main-navigation-1 {
+  display: flex;
+  margin-left: 29px;
+  margin-right: 33px;
+  margin-top: 14px;
+  margin-bottom: 16px;
+
+  /* Для сетки */
+  outline: 1px black solid;
+}
+
+.main-navigation-1 li:first-child {
+  width: 85px;
+}
+
+.main-navigation-1 li:nth-child(2) {
+  width: 172px;
+}
+
+.main-navigation-1 li:nth-child(3) {
+  width: 93px;
+}
+
+.main-navigation-2 {
+  display: none;
+}
+
+.buttons ul{
+  display: flex;
+}
+
+input[type=search] {
+  display: none;
+}
+
+.entry {
+  display: none;
+}
+
+.brief-information {
+  width: 166px;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Для сетки */
+  outline: 1px black solid;
+}
+
+.brief-information span {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.slider {
+  margin-bottom: 40px;
+}
+
+.banners {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.tasty-banners {
+  width: 560px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.items {
+  width: 267px;
+
+  /* Для сетки */
+  outline: 1px black solid;
+}
+
+.btn-review {
+  display: none;
+}
+
+.seo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 26px 20px 15px;
+  margin-bottom: 40px;
+}
+
+.seo-1 {
+  width: 540px;
+}
+
+.news-delivery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.block-1 {
+  width: 560px;
+}
+
+.map {
+  /* Для сетки */
+  outline: 1px black solid;
+  min-height: 430px;
+}
+
+.footer-social, .footer-copyright {
+  width: 267px;
+}
+
+.footer-references {
+  width: 560px;
+}
+
+/* Каталог */
+.item-form {
+  display: none;
+}
+
+.creamy {
+  margin-bottom: 28px;
+}
+
+.selection {
+  margin-bottom: 40px;
+}
+
+.number-btn {
+  display: flex;
+  justify-content: space-between;;
+  width: 190px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.number-btn li{
+  width: 25px;
 }
