@@ -8,40 +8,91 @@ body {
   margin: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  }
-
-li {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none; 
-}
-
 h1 {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
 }
 
+/* Шрифты */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Roboto-Regular"),
+       url("fonts/roboto-regular-webfont.woff2") format("woff2"),
+       url("fonts/roboto-regular-webfont.woff") format("woff"),
+       url("fonts/Roboto-Regular.ttf") format("ttf"),
+       url("fonts/roboto-regular-webfont.eot") format("eot");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Roboto-Bold"),
+       url("fonts/roboto-bold-webfont.woff2") format("woff2"),
+       url("fonts/roboto-bold-webfont.woff") format("woff"),
+       url("fonts/Roboto-Bold.ttf") format("ttf"),
+       url("fonts/roboto-bold-webfont.eot") format("eot");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: bold;
+  src: local("Roboto-BoldItalic"),
+       url("fonts/roboto-bolditalic-webfont.woff2") format("woff2"),
+       url("fonts/roboto-bolditalic-webfont.woff") format("woff"),
+       url("fonts/Roboto-BoldItalic.ttf") format("ttf"),
+       url("fonts/roboto-bolditalic-webfont.eot") format("eot");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Roboto-Italic"),
+       url("fonts/roboto-italic-webfont.woff2") format("woff2"),
+       url("fonts/roboto-italic-webfont.woff") format("woff"),
+       url("fonts/Roboto-Italic.ttf") format("ttf"),
+       url("fonts/roboto-italic-webfont.eot") format("eot");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Roboto-Medium"),
+       url("fonts/roboto-medium-webfont.woff2") format("woff2"),
+       url("fonts/roboto-medium-webfont.woff") format("woff"),
+       url("fonts/Roboto-Medium.ttf") format("ttf"),
+       url("fonts/roboto-medium-webfont.eot") format("eot");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Roboto-MediumItalic"),
+       url("fonts/roboto-mediumitalic-webfont.woff2") format("woff2"),
+       url("fonts/roboto-mediumitalic-webfont.woff") format("woff"),
+       url("fonts/Roboto-MediumItalic.ttf") format("ttf"),
+       url("fonts/roboto-mediumitalic-webfont.eot") format("eot");
+}
+
+/* Основные блоки */
 .container {
-  box-sizing: border-box;
-  width: 1200px;
+  display: flex;
+  width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
-  display: flex;
 
   /* Для сетки */
   outline: 1px black solid;
 }
 
 .container:nth-child(1) {
-  padding-left: 22px;
   margin-top: 10px;
 }
 
@@ -55,48 +106,262 @@ h1 {
   padding-bottom: 26px;
 }
 
-.main-navigation {
-  width: 412px;
-}
-
-.buttons {
-  width: 267px;
-  margin-left: auto;
-}
-
-.main-navigation-1 {
-  display: flex;
-  margin-left: 29px;
-  margin-right: 33px;
-  margin-top: 14px;
-  margin-bottom: 16px;
+/* Шапка */
+.index-logo {
+  margin-left: -5px;
 
   /* Для сетки */
   outline: 1px black solid;
 }
 
-.main-navigation-1 li:first-child {
-  width: 85px;
+.index-logo img {
+  width: 154px;
+  height: 64px;
+
+  /* Для сетки */
+  outline: 1px black solid;
 }
 
-.main-navigation-1 li:nth-child(2) {
+/* Основная навигация */
+.main-navigation {
+  width: 379px;
+  padding-left: 15px;
+  padding-right: 19px;
+  padding-top: 12px;
+
+  /* Для сетки */
+  outline: 1px black solid;
+}
+
+.main-navigation a {
+  text-decoration: none;
+}
+
+.main-navigation li {
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation a {
+  display: block;
+}
+
+.main-navigation-1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  /*margin-bottom: 24px;*/
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.main-navigation-1>li {
+  padding-left: 14px;
+  padding-right: 13px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-radius: 14px;
+
+  /* Для сетки */
+  outline: 1px black solid;
+}
+
+.main-navigation-1>li:first-child {
+  position: relative;
+  width: 89px;
+
+  /* Для сетки */
+  outline: 1px black solid;
+}
+
+.main-navigation-1>li:first-child>a {
+  width: 61px;
+
+  /* Для сетки */
+  outline: 1px black solid;
+}
+
+.main-navigation-1>li:nth-child(2) {
   width: 172px;
 }
 
-.main-navigation-1 li:nth-child(3) {
+.main-navigation-1>li:nth-child(2)>a {
+  width: 144px;
+}
+
+.main-navigation-1>li:nth-child(3) {
+  width: 121px;
+  margin-right: 14px;
+}
+
+.main-navigation-1>li:nth-child(3)>a {
   width: 93px;
 }
+
+.main-navigation-1>li>a:link, a:visited {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-navigation-1>li:hover {
+  background-color: #f7f6f3;
+  color: black;
+}
+
+
 
 .main-navigation-2 {
   display: none;
 }
 
+.catalog:hover .main-navigation-2 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  left: -8px;
+  list-style-type: none;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  width: 145px;
+  background-color: #f8f7f4;
+  border-radius: 4px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.main-navigation-2 a, b {
+  display: block;
+  text-decoration: none;
+  border: none;
+  color: #323232;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.main-navigation-2 b {
+  padding-bottom: 14px;
+  font-weight: bold;
+  margin-right: 8px;
+  padding-right: 12px;
+  margin-left: 8px;
+  padding-left: 12px;
+  padding-top: 13px;
+  border-bottom: 1px solid #d1d0ce;
+}
+
+.main-navigation-2>li:last-child>a {
+  margin-bottom: 7px;
+}
+
+.main-navigation-2 a:hover {
+  background-color: #fbded7;
+}
+
+.main-navigation-2 a:active {
+  background-color: #f6b5a5;
+}
+
+.main-navigation-2 a.active:hover, a.active:active {
+  background-color: #d07058;
+  color: #ffffff;
+}
+
+.buttons {
+  width: 267px;
+  margin-left: auto;
+  padding-top: 12px;
+  /*margin-bottom: 17px;*/
+
+  /* Для сетки */
+  outline: 1px black solid;
+}
+
 .buttons ul{
   display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.buttons li {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 10px;
+}
+
+.buttons li:first-child {
+  margin-left: 7px;
+}
+
+.search button {
+  padding: 8px 8px 4px;
+  border-radius: 35px;
+  background-color: #a1b6aa;
+  border: none;
+  cursor: pointer
+}
+
+.buttons a {
+  position: relative;
+  display: block;
+  padding: 5px 8px 6px;
+  border-radius: 35px;
+  background-color: #a1b6aa;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buttons span {
+  font-family: "Roboto-Medium", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.buttons li a:first-child {
+  padding-left: 43px;
+  padding-right: 17px;
+}
+
+.buttons li a:last-child {
+  padding-left: 43px;
+  padding-right: 34px;
+}
+
+.buttons li:nth-child(2) span:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(img/spritesheet.png);
+  background-repeat: no-repeat;
+  background-position: -122px -80px;
+  width: 21px;
+  height: 19px;
 }
 
 input[type=search] {
   display: none;
+}
+
+.search:hover button {
+  background-color: #ffffff;
+  background-image: url(img/magnifier-2.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.search:hover input[type=search] {
+  display: block;
 }
 
 .entry {
