@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог GllacyShop</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style-mini.css">
   </head>
   <body>
     <!-- Шапка -->
     <header class="container">
       <a class="index-logo" href="index.html">
-        <img src="img/index-logo.svg" weight="154" height="64" alt="Gllacy">
+        <img src="img/index-logo.svg" width="154" height="64" alt="Gllacy">
       </a>
 
       <!-- Основная навигация -->
       <nav class="main-navigation">
         <ul class="main-navigation-1">
           <li class="catalog link">
-            <a class="active" href="#"><span>Каталог</span></a>
+            <a class="active" href="#"><span class="catalog-active">Каталог</span></a>
             <ul class="main-navigation-2">
               <li>
                 <b class="items-new">Новинки</b>
@@ -52,7 +53,7 @@
               <button type="submit">
               </button>
               <div class="style-search form-field">
-                <input type="search" name="search" id="search-field" value="" placeholder="Что ищем?">
+                <input type="search" name="search" id="search-field" value="" placeholder="Что ищем?" required>
                 <label for="search-field" class="label-hidden">Что ищем?</label>
               </div>
             </form>
@@ -89,7 +90,7 @@
                     </button>
                   </td>
                   <td>
-                    <img src="img/logo-12.png" width="33" height="33">
+                    <img src="img/logo-12.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                   </td>
                   <td>
                     Пломбир с апельсиновым джемом
@@ -107,7 +108,7 @@
                     </button>
                   </td>
                   <td>
-                    <img src="img/logo-13.png" width="33" height="33">
+                    <img src="img/logo-13.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                   </td>
                   <td>
                     Клубничный пломбир с присыпкой из белого шоколада
@@ -248,13 +249,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-1.png"  width="267" height="267">
+              <img src="img/item-1.png"  width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </div>
             <div class="items-price">
               310 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+              <span class="items-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -264,13 +265,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-2.png"  width="267" height="267">
+              <img src="img/item-2.png"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             </div>
             <div class="items-price">
               380 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочно-кофейное с кусочками шоколада</span>
+              <span class="items-title">Сливочно-кофейное с кусочками шоколада</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -280,13 +281,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-3.png"  width="267" height="267">
+              <img src="img/item-3.png"  width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </div>
             <div class="items-price">
               355 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+              <span class="items-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -296,13 +297,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-4.png"  width="267" height="267">
+              <img src="img/item-4.png"  width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             </div>
             <div class="items-price">
               415 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочное крем-брюле с карамельной подливкой</span>
+              <span class="items-title">Сливочное крем-брюле с карамельной подливкой</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -313,13 +314,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-5.png"  width="267" height="267">
+              <img src="img/item-5.png"  width="267" height="267" alt="Сливочное с брусничным джемом">
             </div>
             <div class="items-price">
               325 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочное с брусничным джемом</span>
+              <span class="items-title">Сливочное с брусничным джемом</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -329,13 +330,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-6.png"  width="267" height="267">
+              <img src="img/item-6.png"  width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
             </div>
             <div class="items-price">
               410 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочно-черничное с цельными ягодами черники</span>
+              <span class="items-title">Сливочно-черничное с цельными ягодами черники</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -345,13 +346,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-7.png"  width="267" height="267">
+              <img src="img/item-7.png"  width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
             </div>
             <div class="items-price">
               375 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочно-лимонное с карамельной присыпкой</span>
+              <span class="items-title">Сливочно-лимонное с карамельной присыпкой</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -361,13 +362,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-8.png"  width="267" height="267">
+              <img src="img/item-8.png"  width="267" height="267" alt="Сливочное с шоколадной стружкой">
             </div>
             <div class="items-price">
               320 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочное с шоколадной стружкой</span>
+              <span class="items-title">Сливочное с шоколадной стружкой</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -378,13 +379,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-9.png"  width="267" height="267">
+              <img src="img/item-9.png"  width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
             </div>
             <div class="items-price">
               340 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочно-ванильное с кусочками шоколада</span>
+              <span class="items-title">Сливочно-ванильное с кусочками шоколада</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -394,13 +395,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-10.png"  width="267" height="267">
+              <img src="img/item-10.png"  width="267" height="267" alt="Сливочное с ментоловым сиропом">
             </div>
             <div class="items-price">
               435 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочное с ментоловым сиропом</span>
+              <span class="items-title">Сливочное с ментоловым сиропом</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -410,13 +411,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-11.png"  width="267" height="267">
+              <img src="img/item-11.png"  width="267" height="267" alt="Сливочное с кусочками черного шоколада">
             </div>
             <div class="items-price">
               355 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочное с кусочками черного шоколада</span>
+              <span class="items-title">Сливочное с кусочками черного шоколада</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -426,13 +427,13 @@
         <div class="items-wrapper">
           <article class="items">
             <div class="items-image">
-              <img src="img/item-12.png"  width="267" height="267">
+              <img src="img/item-12.png"  width="267" height="267" alt="Сливочное с мятным сиропом">
             </div>
             <div class="items-price">
               420 &#8381;/<span>кг</span>
             </div>
             <p class="items-description">
-              <span>Сливочное с мятным сиропом</span>
+              <span class="items-title">Сливочное с мятным сиропом</span>
             </p>
             <div class="btn-review-wrapper">
               <a class="btn btn-review" href="#">Быстрый просмотр</a>

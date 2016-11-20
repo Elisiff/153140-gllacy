@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>GllacyShop</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style-mini.css">
   </head>
   <body>
     <input type="radio" id="slider-btn-1" name="toggle" checked>
@@ -57,7 +58,7 @@
                 <button type="submit">
                 </button>
                 <div class="style-search form-field">
-                  <input type="search" name="search" id="search-field" value="" placeholder="Что ищем?">
+                  <input type="search" name="search" id="search-field" value="" placeholder="Что ищем?" required>
                   <label for="search-field" class="label-hidden">Что ищем?</label>
                 </div>
               </form>
@@ -160,13 +161,13 @@
           <div class="items-wrapper">
             <article class="items">
               <div class="items-image">
-                <img src="img/item-1.png"  width="267" height="267">
+                <img src="img/item-1.png"  width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
               <div class="items-price">
                 310 &#8381;/<span>кг</span>
               </div>
               <p class="items-description">
-                <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="items-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
               </p>
               <div class="btn-review-wrapper">
                 <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -177,13 +178,13 @@
           <div class="items-wrapper">
             <article class="items">
               <div class="items-image">
-                <img src="img/item-2.png"  width="267" height="267">
+                <img src="img/item-2.png"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               </div>
               <div class="items-price">
                 380 &#8381;/<span>кг</span>
               </div>
               <p class="items-description">
-                <span>Сливочно-кофейное с кусочками шоколада</span>
+                <span class="items-title">Сливочно-кофейное с кусочками шоколада</span>
               </p>
               <div class="btn-review-wrapper">
                 <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -194,13 +195,13 @@
           <div class="items-wrapper">
             <article class="items">
               <div class="items-image">
-                <img src="img/item-3.png"  width="267" height="267">
+                <img src="img/item-3.png"  width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </div>
               <div class="items-price">
                 355 &#8381;/<span>кг</span>
               </div>
               <p class="items-description">
-                <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+                <span class="items-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
               </p>
               <div class="btn-review-wrapper">
                 <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -211,13 +212,13 @@
           <div class="items-wrapper">
             <article class="items">
               <div class="items-image">
-                <img src="img/item-4.png"  width="267" height="267">
+                <img src="img/item-4.png"  width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               </div>
               <div class="items-price">
                 415 &#8381;/<span>кг</span>
               </div>
               <p class="items-description">
-                <span>Сливочное крем-брюле с карамельной подливкой</span>
+                <span class="items-title">Сливочное крем-брюле с карамельной подливкой</span>
               </p>
               <div class="btn-review-wrapper">
                 <a class="btn btn-review" href="#">Быстрый просмотр</a>
@@ -233,7 +234,6 @@
             собственного производства на развес
           </p>
           <div class="seo-1">
-            <img class="seo-logo" src="img/logo-4.png" width="49" height="49">
             <p class="seo-description">
               Все наше мороженое изготавливается на собственном производстве
               с использованием современного оборудования и проверенных временем
@@ -241,7 +241,6 @@
             </p>
           </div>
           <div class="seo-1">
-            <img class="seo-logo" src="img/logo-6.png" width="48" height="49">
             <p class="seo-description">
               Закупка ингредиентов производится только у проверенных фермерских
               хозяйств и компаний, с которыми нас связывает долговременное
@@ -249,7 +248,6 @@
             </p>
           </div>
           <div class="seo-1">
-            <img class="seo-logo" src="img/logo-5.png" width="49" height="49">
             <p class="seo-description">
               Для приготовления мороженого используются настоящие сливки и
               молоко высочайшего качества. Все дополнительные ингредиенты и
@@ -257,7 +255,6 @@
             </p>
           </div>
           <div class="seo-1">
-            <img class="seo-logo" src="img/logo-7.png" width="48" height="49">
             <p class="seo-description">
               Доставка нашего мороженого до заказчиков осуществляется в специальном
               термопаке, который не дает мороженому растаять в пути и позволяет
@@ -287,7 +284,7 @@
                 не слать всякой не нужной ерунды. Честно =)
               </p>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="email" name="delivery" id="delivery-email-field" placeholder="Электронная почта">
+                <input type="email" name="delivery" id="delivery-email-field" placeholder="Электронная почта" required>
                 <label for="delivery-email-field" class="label-hidden">Электронная почта</label>
                 <button class="btn send-btn" type="submit">Отправить</button>
               </form>
@@ -297,6 +294,7 @@
 
         <!-- Карта -->
         <div class="map" id="yandex-map">
+          <span class="marker"></span>
           <section class="contacts">
             <p class="address">
               Адрес главного офиса и<br>
@@ -309,16 +307,16 @@
               <span>8 812 450-25-25</span>
               (с 10 до 20 ежедневно)
             </p>
-            <a class="btn feedback-btn" href="#feedback-form">Форма обратной связи</a>
-            <form id="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+            <a class="btn feedback-btn" href="feedback-form.html">Форма обратной связи</a>
+            <form class="modal-feedback" id="feedback-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="feedback-form-title">
                 Мы обязательно вам ответим!
               </div>
-              <input type="text" name="name" id="feedback-name-field" value="" placeholder="Как вас зовут?">
+              <input type="text" name="name" id="feedback-name-field" value="" placeholder="Как вас зовут?" required>
               <label for="feedback-name-field" class="label-hidden">Как вас зовут?</label>
               <input type="email" name="mail" id="feedback-mail-field" value="" placeholder="Ваша почта для ответа?" required>
               <label for="feedback-mail-field" class="label-hidden-2">Ваша почта для ответа?</label>
-              <textarea name="text" id="feedback-text-field" rows="" placeholder="Напишите что-нибудь..."></textarea>
+              <textarea name="text" id="feedback-text-field" placeholder="Напишите что-нибудь..." required></textarea>
               <label for="feedback-text-field" class="label-hidden-3">Напишите что-нибудь...</label>
               <div class="send-btn-wrapper">
                 <button class="btn send-btn" type="submit">Отправить</button>
@@ -365,10 +363,10 @@
       </footer>
     </div>
 
-    <script
-    type="text/javascript"
-    charset="utf-8"
-    async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=RXJj1OMEf-goLb1toeLCtGlop_aq8MlJ&amp;width=1200&amp;height=430&amp;id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+    <script type="text/javascript" charset="utf-8" async
+    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=RXJj1OMEf-goLb1toeLCtGlop_aq8MlJ&amp;width=1200&amp;height=430&amp;id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+    </script>
+    <script type="text/javascript" src="js/script-mini.js">
     </script>
   </body>
 </html>
