@@ -13,6 +13,7 @@ body {
 }
 
 .site-wrapper {
+  min-width: 1200px;
   background-color: #849d8f;
   background-image: url(../img/slide-1.png);
   background-repeat: no-repeat;
@@ -923,11 +924,13 @@ body>input[type="radio"] {
 }
 
 .tasty-banners:first-child {
+  background-color: #8f0022;
   background-image: url(../img/raspberries.png);
   background-repeat: no-repeat;
 }
 
 .tasty-banners:nth-child(2) {
+  background-color: #633b27;
   background-image: url(../img/chocolates.png);
   background-repeat: no-repeat;
 }
@@ -1102,6 +1105,7 @@ body>input[type="radio"] {
   margin-bottom: 40px;
   padding: 23px 20px 15px;
   color: #323232;
+  background-color: #ede1c9;
   background-image: url(../img/pattern-1.jpg);
   border-radius: 12px;
 }
@@ -1154,7 +1158,7 @@ body>input[type="radio"] {
   background-repeat: no-repeat;
 }
 
-.slogan {
+.about {
   margin: 0px;
   margin-bottom: 10px;
   padding: 0px;
@@ -1235,6 +1239,7 @@ body>input[type="radio"] {
 
 /*Рассылка*/
 .delivery-wrapper {
+  background-color: #f8f7f4;
   background-image: url(../img/pattern-2.jpg);
   background-repeat: repeat-x repeat-y;
 }
@@ -1295,6 +1300,7 @@ body>input[type="radio"] {
   height: 430px;
   margin-left: -27px;
   margin-right: -27px;
+  background-color: #f7f1d9;
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
 }
